@@ -2,25 +2,11 @@
   text-align: center;
 }
 
-body{
+body {
   background-color: #eaeded;
 }
 
 .App-main {
   display: flex;
   padding: 14px 18px 0px 18px;
-}
-
-.CardItems {
-  background-color: white;
-  flex: 0.7;
-  margin-right: 18px;
-  text-align: left;
-  padding: 20px;
-}
-
-.CardTotal {
-  background-color: white;
-  height: 200px;
-  flex: 0.3;
 }
