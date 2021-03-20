@@ -9,6 +9,15 @@ function App() {
 
     <div className="App">
       <Header title={title} />
+      <div className="App-main">
+
+        <div className="CardItems">
+          <h1>Shopping Cart</h1>
+        </div>
+        
+        <div className="CardTotal"></div>
+
+      </div>
     </div>
   );
 }
