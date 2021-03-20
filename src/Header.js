@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import "./Header.css";
 
-function Header() {
-    return (
-        <div className="header">
-            <h1>Amazon Cart</h1>
-        </div>
-    )
+function Header({ title }) {
+  return (
+    <div className="header">
+      <h1>{title}</h1>
+    </div>
+  );
 }
 
-export default Header
+export default Header;
