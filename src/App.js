@@ -17,7 +17,7 @@ function App() {
       <div className="App-main">
         <CardItems items={cartItems} />
 
-        <CardTotal />
+        <CardTotal items={cartItems}/>
       </div>
     </div>
   );
