@@ -2,12 +2,14 @@
   display: flex;
   border-bottom: 1px solid #ddd;
   padding-bottom: 12px;
-  padding-top: 12px;;
+  padding-top: 12px;
 }
 
 .CardItem-image {
   width: 180px;
   height: 180px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 .CardItem-image img {
   object-fit: contain;
@@ -15,6 +17,7 @@
 }
 .CardItem-info {
   flex-grow: 1;
+  padding-left: 12px;
 }
 
 .info-title h2 {
@@ -42,6 +45,7 @@
 .CardItem-price {
   font-size: 18px;
   font-weight: 700;
+  margin-left: 16px;
 }
 
 .item-quantity select {
@@ -51,7 +55,6 @@
   border-radius: 7px;
   box-shadow: 0px 2px 5px 0px rgba(15, 17, 17, 0.15);
 }
-
 
 .item-actions-divider {
   margin-left: 8px;

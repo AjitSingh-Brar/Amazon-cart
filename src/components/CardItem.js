@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./CardItem.css"
-function CardItem() {
+function CardItem({item}) {
+
+    const [cartItem, setCartItem] = useState(item);
     return (
         <div className="CardItem">
             <div className="CardItem-image">
-                <img src="https://multimedia.bbycastatic.ca/multimedia/products/500x500/149/14961/14961856.jpg" alt=""/>
+                <img src={process.env.PUBLIC_URL + `/items/${cartItem.image}`} alt=""/>
             </div>
             <div className="CardItem-info">
                 <div className="info-title">
-                    <h2>Apple Ipad Pro</h2>
+                    <h2>{cartItem.title}</h2>
                 </div>
-                <div className="info-stock">In Stock</div>
+                <div className="info-stock">{cartItem.stock}</div>
                 <div className="item-actions">
                     <div className="item-quantity">
-                        <select>
+                        <select value = {cartItem.quantity}>
                             <option value="1">Qty: 1</option>
                             <option value="2">Qty: 2</option>
                             <option value="3">Qty: 3</option>
@@ -26,7 +28,7 @@ function CardItem() {
                 </div>
             </div>
             <div className="CardItem-price">
-                $250.00
+               ${cartItem.price}
             </div>
         </div>
     )
