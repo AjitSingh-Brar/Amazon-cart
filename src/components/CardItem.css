@@ -1,0 +1,15 @@
+.CardItem {
+  display: flex;
+}
+
+.CardItem-image {
+  width: 180px;
+  height: 180px;
+}
+.CardItem-image img {
+  object-fit: contain;
+  width: 100%;
+}
+.CardItem-info {
+  flex-grow: 1;
+}
