@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "./CardItem.css";
-function CardItem({ item, index, changeItemQuantity }) {
+function CardItem({ item, index, changeItemQuantity, deleteItem }) {
   return (
     <div className="CardItem">
       <div className="CardItem-image">
@@ -23,7 +23,7 @@ function CardItem({ item, index, changeItemQuantity }) {
             </select>
           </div>
           <div className="item-actions-divider">|</div>
-          <div className="item-delete">Delete</div>
+          <div className="item-delete" onClick={(e)=> deleteItem(e, index)}>Delete</div>
         </div>
       </div>
       <div className="CardItem-price">${item.price}</div>
