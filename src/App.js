@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header title={title} />
       <div className="App-main">
-        <CardItems items={cartItems} />
+        <CardItems items={cartItems}  setCartItems = {setCartItems}/>
 
         <CardTotal items={cartItems}/>
       </div>
